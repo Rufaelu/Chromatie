@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Londrina Outline';
+    src:url('../Resources/LondrinaOutline.ttf') format('truetype');
+}
+
+body{
+    background-color:#FFE8D6;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+button{
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+#loginform{
+    position:fixed;
+    top:30vh;
+    left:35vw;
+}
+.logininfo{
+    width:13vw;
+    height:5vh;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background-color:transparent;
+
+
+
+}
+
+#svg1{
+    width:40vw;
+    height:55vh;
+    position:absolute;
+    left:-14vw;
+    top:-2vh;
+}
+#svg2{
+    /* Polygon 2 */
+
+    position: absolute;
+    width:40vw;
+    height:55vh;
+    left: -12vw;
+    top: 66vh;
+
+    transform: rotate(-66.91deg);
+
+}
+#svg3{
+    position: absolute;
+    width:40vw;
+    height:55vh;
+    left: 70vw;
+    top: 60vh;
+}
+input[type="submit"]:active {
+    box-shadow: 0 2px rgba(236, 167, 57, 0.66);     /* Reduce shadow to make it feel pressed */
+    transform: translate(3px); /* Move button down slightly */
+}
+input[type="submit"]{
+    /* Button */
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+
+    box-sizing: border-box;
+
+
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+
+    width: 13vw;
+    height: 5vh;
+
+
+    background: linear-gradient(90deg, rgba(165, 165, 141, 0.72) 0%, rgba(107, 112, 92, 0.72) 100%);
+    border: 1px solid #00E0FF;
+    border-radius: 999px;
+
+}
+#chromatie{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 60px;
+margin-left: 5vw;
+}
+#chromatiemotto{
+    font-size:5vh;
+}
+#chromatiedisc{
+    width:80vw;
+    position:fixed;
+    top:25vh;
+    left:60vw;
+}
+
+@media (max-width: 480px) {
+
+    #loginform{
+        width:80%;
+        height:80%;
+    }
+    #chromatiedisc{
+        display:none;
+    }
+    .logininfo{
+        width:40vw;
+    }
+    #loginbtn{
+        width:30vw;
+        padding-top:1vh;
+    }
+
+}

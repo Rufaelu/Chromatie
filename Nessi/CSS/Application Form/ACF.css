@@ -1,0 +1,126 @@
+/* Styling for body, header, and container */
+body {    
+    background-color: #07076A; /* Updated body color */
+    font-family: 'Outfit', sans-serif;
+    color: #F8ECA6; /* Updated text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensures body takes up full viewport height */
+}
+
+header {
+    background-color: #F8ECA6; /* Updated header color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #07076A;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ea1010;
+}
+
+/* Set container to fill lower half of the page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Takes the remaining space below header */
+    max-width: 1200px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    width: 100%; /* Fill available width */
+}
+
+/* Form section adjustments */
+.info_section {
+    background-color: #F8ECA6; /* Updated info section color */
+    padding: 40px; /* Increase padding for better appearance */
+    width: 50%; /* Reduce width to fit smaller space */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields */
+input[type="text"], input[type="password"], input[type="date"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: #FFFFFF; /* Input background remains white for readability */
+    box-sizing: border-box;
+}
+
+/* Styling specifically for the email input */
+input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    transition: border 0.3s ease-in-out;
+}
+
+input[type="email"]:focus {
+    border-color: #65558F; /* Focus border color */
+    box-shadow: 0 0 5px rgba(101, 85, 143, 0.5);
+}
+
+/* Label styling */
+.label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #6C757D; /* Keep label color for contrast */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Info text */
+.info_text {
+    font-size: 0.8em;
+    color: #6C757D; /* Keep info text color for contrast */
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+#cancelBtn, #nextBtn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#cancelBtn {
+    background-color: #FFFFFF;
+    color: #65558F;
+    margin-right: 20px;
+}
+
+#nextBtn {
+    background-color: #65558F; /* Keep button color for contrast */
+    color: #FFFFFF;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .info_section {
+        width: 90%; /* Adjust width on smaller screens */
+    }
+}

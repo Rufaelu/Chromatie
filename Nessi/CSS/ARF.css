@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #07076A; /* Updated body color */
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    flex: 1;
+    background: url('./Assets/man-laughing.jpg') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 24%;
+    transform: translateX(-50%);
+}
+
+.overlay-text h1 {
+    font-size: 3rem;
+    color: black; /* Updated overlay heading color */
+}
+
+.overlay-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #F8ECA6; /* Updated overlay text color */
+}
+
+.right-section {
+    flex: 1;
+    background-color: #F8ECA6; /* Updated right section color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Added more padding for breathing space */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 450px; /* Increased max-width for better spacing */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Centered heading */
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+    text-align: center; /* Centered text */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button.create-account {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.google-signup {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.sign-in-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sign-in-text a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-in-text a:hover {
+    text-decoration: underline;
+}
+
+/* Identity selection buttons (Artist/Customer) */
+.identity-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Adds space between the buttons */
+}
+
+.identity-btn {
+    background-color: #F8ECA6; /* Updated button color */
+    color: black;
+    padding: 12px 0; /* Increased padding for better button size */
+    border: none;
+    border-radius: 8px; /* Rounded corners for smoother look */
+    cursor: pointer;
+    width: 100%; /* Buttons take up the full width of their container */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly increased font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.identity-btn:hover {
+    background-color: #e0d8a2; /* Lighter shade on hover */
+}

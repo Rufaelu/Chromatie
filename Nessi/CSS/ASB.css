@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #07076A; /* Updated body color */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #F8ECA6; /* Updated sidebar color */
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #F8ECA6; /* Updated header text color */
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: #F8ECA6; /* Updated header text color */
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background-color: #F8ECA6; /* Updated stat card color */
+  padding: 20px;
+  width: 23%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.stat-card .growth {
+  font-size: 1rem;
+}
+
+.growth.positive {
+  color: green;
+}
+
+.growth.negative {
+  color: red;
+}
+
+/* Flex container for the chart and job posts */
+.charts-and-jobs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.chart {
+  background-color: #F8ECA6; /* Updated chart color */
+  padding: 20px;
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#responseChart {
+  max-width: 100%;
+  height: auto;
+}
+
+.legend {
+  margin-top: 10px;
+}
+
+.legend span {
+  display: block;
+  margin: 5px 0;
+}
+
+.service-posts {
+  background-color: #F8ECA6; /* Updated service posts color */
+  padding: 20px;
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 20px; /* Space above table */
+}
+
+.service-posts h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-posts table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.service-posts table thead th {
+  background-color: #F7F7F7;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+.service-posts table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #444;
+}
+
+.service-posts table tbody tr:last-child td {
+  border-bottom: none; /* Removes the bottom border on the last row */
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.active {
+  color: green;
+}
+
+.status.inactive {
+  color: red;
+}

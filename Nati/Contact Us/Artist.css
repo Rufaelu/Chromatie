@@ -1,0 +1,40 @@
+body {
+  background-color: #07076A; /* Updated body color */
+  font-family: sans-serif;
+  text-align: center;
+  color: #F8ECA6; /* Updated text color */
+}
+
+.txt{
+  color: #07076A;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F8ECA6; /* Updated container background color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #412929; /* Keep border color for contrast */
+  box-sizing: border-box;
+  background-color: #B7B7A4; /* Input background remains unchanged for readability */
+}
+
+button {
+  background-color: #ddbea9; /* Keep button color for contrast */
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}

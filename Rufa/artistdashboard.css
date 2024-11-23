@@ -1,0 +1,636 @@
+*{
+    background-color:#FFE8D6;    margin: 0;
+    padding:0;
+/**/
+}
+body{
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap:2vw;
+}
+
+header {
+  top: 0;
+    left: 0;
+    margin:0;
+    padding:0;
+    display:flex;
+    position: fixed;
+    width: 100%;
+    border-radius:20px;
+    height: 5%;
+    z-index: 1000;
+}
+header #chrom {
+    margin-left: 40vw;
+}
+header nav{
+
+    margin-left: 20vw;
+}
+
+a{
+
+    color: Black !important;
+    text-decoration: none;
+}
+
+#body{
+    background-color:#FFE8D6;
+
+    padding-top:30px;
+    display: grid;
+    grid-template-areas: 'coverimage coverimage coverimage' 'leftprofile main projects';
+    grid-template-rows: auto 1fr; /* Allow coverimage to take natural height and balance other rows */
+
+}
+
+#coverimage{
+    grid-area: coverimage;
+
+    background-color: transparent;
+    height: 30vh;
+    /*object-fit: cover;*/
+    width: 80%;
+    top: 19vh;
+    left: 0;
+
+}
+
+#coverimage img{
+    margin-left: 0.4vw;
+    border-radius:3vh;
+    height: 30vh;
+    width: 99vw;
+background-color: transparent;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+
+}
+#profile {
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* Scroll left */
+    }
+}
+@keyframes scrollBack {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Scroll right */
+    }
+}
+.media-images-container{
+    background-color: transparent;
+    gap:1vw;
+}
+.media-item-container {
+    animation: scrollBack 10s linear infinite;
+    /* Animation for scrolling */
+    animation-delay: 1s;
+
+}
+.media-videos-container{
+    background-color: transparent;
+    gap:1vw;
+    margin-top: 2vh;
+}
+.media-image:hover{
+transform: scale(1.1);
+}
+
+.media-image{
+    transition: transform 1s ease;
+}
+#profilepic{
+    border-radius:100vh;
+    width: 20vh;
+    height: 20vh;
+   box-shadow: black 1px   1px 10px;
+    background-color: transparent;
+    align-self: center;
+    position: sticky;
+
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}
+.services{
+    background: transparent;
+
+}
+#otherservices{
+width:12vw;
+    height:14vh;
+   margin-left:3vw;
+    background: rgba(221, 190, 169, 0.17);
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-left:1.4vw;
+}
+#rating{
+    width:12vw;
+    height:7vh;
+    margin-left:4vw;
+    background: rgba(221, 190, 169, 0.17);
+    border-radius: 20px;
+    font-size:3vw;
+}
+
+#asidecontainer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+margin-left: 0.4vw;
+    height:90vh;
+    /*background-color: transparent;*/
+    width:20vw;
+    align-self: flex-start;
+    position: sticky;
+    z-index: 111;
+    top:10vh;
+    margin-top: -3vh;
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+
+}
+button{
+    margin-left: 3vw;
+    width:10vw;
+    height: 4vh;
+    border-radius:20px;
+
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+
+    background: #8d9673;
+    border: 1px solid ;
+}
+button:hover {
+    background-color: rgba(204, 173, 129, 0.66);  /* Green background */
+    color: #fff;                /* White text */
+}
+#deletraccount:hover{
+color:black;
+}
+
+/* Button behavior on click */
+button:active {
+    box-shadow: 0 2px rgba(236, 167, 57, 0.66);     /* Reduce shadow to make it feel pressed */
+    transform: translate(3px); /* Move button down slightly */
+}
+main{
+    /*background-color: #080808;*/
+    grid-area: main;
+    /*height:50vh;*/
+    display:flex;
+    flex-direction: column;
+    gap:4vh;
+    width:50vw;
+    height:120vh;
+    align-self: stretch;
+}
+.media{
+    width:90vw;
+    background-color: red;
+}
+/* Rectangle 21 */
+#bio {
+    margin-top:4vh;
+    margin-left: 3vw;
+    width: 46vw;
+    height: 50vh;
+    left: 24vw;
+    top: 47vh;
+    opacity: 1;
+    transition: opacity 12s ease;
+    background: rgba(221, 190, 169, 0.27);
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 41px;
+}
+#services {
+    margin-left: 3vw;
+    width: 46vw;
+    height: 150vh;
+    /*height: fit-content;*/
+    left: 24vw;
+    top: 110vh;
+
+    background: rgba(221, 190, 169, 0.27);
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 41px;
+}
+
+#completed{
+    /* Rectangle 22 */
+margin-left: 1vw;
+    width: 90%;
+    height: 30%;
+
+
+    background: rgba(221, 190, 169, 0.17);
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+#onprogress{
+
+    width: 90%;
+    height: 30%;
+    margin-left: 1vw;
+
+
+    background: rgba(221, 190, 169, 0.17);
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+#projects{
+    margin-top: 5vh;
+    /*background-color:teal;*/
+    width:25vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+   gap: 14vh;
+    grid-area: projects;
+    position:sticky;
+    top:10vh;
+    z-index:11;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.popup-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    z-index: 1000; /* Ensure it sits on top of the blurred background */
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form label { display: block; margin: 10px 0; }
+
+.contact-container {
+    margin-left:5vw;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width:12vw;
+}
+
+.contact-text {
+    font-size: 3vh;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0;
+    color: #333;
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+
+/* Glowing effect on hover */
+.contact-text:hover {
+
+    color: #007bff;
+    text-shadow: 0px 0px 8px #007bff;
+}
+
+.contact-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    opacity: 0;
+    max-height: 0;
+    overflow: visible;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, max-height 0.5s ease, transform 0.5s ease;
+}
+
+/* Show the contact list when hovering over the text */
+.contact-container:hover .contact-list {
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+}
+
+/* Vertical list: Remove flex to stack items vertically */
+.contact-list li {
+    display: block; /* Stack list items vertically */
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    width:2vw;
+}
+
+/* Icon styling */
+.contact-logo {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+    background-color: transparent;
+    transition: transform 2.3s ease, color 0.1ms ease;
+}
+i, a{
+    background-color: transparent;
+}
+
+
+/* Link styling */
+/*.contact-link {*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*    font-weight: bold;*/
+/*    font-size: 18px;*/
+/*    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;*/
+/*}*/
+
+/* Hover effect: Icon and link scale up */
+.contact-list li:hover .contact-logo {
+
+    color: rgb(162, 178, 111);
+}
+
+/*.contact-list li:hover .contact-link {*/
+/*    transform: scale(1.2);*/
+/*    color: #007bff;*/
+/*    text-shadow: 0px 0px 6px #007bff;*/
+/*}*/
+
+
+button{
+    margin-left: 3vw;
+    width:10vw;
+    height: 4vh;
+    border-radius:1vh;
+
+    box-shadow: 20px 20px 4px -10px rgba(0, 0, 0, 0.1);
+
+    background: #8d9673;
+    border: 1px solid ;
+}
+button:hover {
+    background-color: rgba(204, 173, 129, 0.66);  /* Green background */
+    color: #fff;                /* White text */
+}
+
+/* Button behavior on click */
+button:active {
+    box-shadow: 0 2px rgba(236, 167, 57, 0.66);     /* Reduce shadow to make it feel pressed */
+    transform: translate(3px); /* Move button down slightly */
+}
+.media-scroll-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.media-images-container, .media-videos-container {
+    flex: 1;
+    position: relative;
+    width:auto;
+    height:auto;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Prevents wrapping, making items scroll sideways */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+
+    /*background-color: red;*/
+
+}
+
+.media-item-container {
+    margin-bottom: 20px;
+}
+
+.media-item {
+    max-width: 100%;
+    height: auto;
+    /*background-color: red;*/
+}
+
+.media-images-container h3, .media-videos-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    /*margin-left: 2vw;*/
+    padding-left: 2vw;
+    position: sticky;
+    height: auto;
+    background-color: transparent;
+}
+
+
+/* Scrollable container */
+.media-scroll-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /* Prevents wrapping, making items scroll sideways */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 3vh;
+    margin-left: -3vw;
+    margin-right: 2vw;
+    border-radius: 18px;
+
+    scroll-behavior:smooth; /* Smooth scrolling */
+    gap: 15px; /* Space between media items */
+}
+
+/* Common styles for media items (images and videos) */
+.media-item {
+    flex: 0 0 auto; /* Prevent shrinking */
+    max-width: 300px; /* Max width for media items */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styles for images */
+.media-image {
+    margin-top: 4vh;
+    width: 100vw;
+    height: 30vh;
+    gap:2vw;
+}
+
+/* Specific styles for videos */
+.media-video {
+    width: 50%;
+    height: auto;
+}
+
+/* Placeholder for unsupported media types */
+.media-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    color: red;
+    text-align: center;
+}
+
+.no-media-message {
+    text-align: center;
+    color: gray;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 5vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    header #chrom {
+        margin-left: 0;
+    }
+
+    header nav {
+        margin-left: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #body {
+        /*grid-template-areas:*/
+        /*    'coverimage'*/
+        /*    'leftprofile'*/
+        /*    'main'*/
+        /*    'projects'*/
+        /*    'footer';*/
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    /* Cover image */
+    #coverimage {
+        height: 20vh;
+        width: 100%;
+    }
+
+    #coverimage img {
+        height: 20vh;
+        width: 100%;
+        border-radius: 2vh;
+    }
+
+    /* Profile Picture and Aside container */
+    #asidecontainer {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2vh;
+        align-items: center;
+    }
+
+    #profilepic {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    #name, #skill {
+        text-align: center;
+    }
+
+    #otherskills, #rating {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Main content */
+    main {
+        width: 100%;
+        height: auto;
+        padding: 0 2vw;
+    }
+
+    #bio, #services {
+        width: 90%;
+        margin: 2vh auto;
+        height: auto;
+        padding: 20px;
+        font-size: 1.8vh;
+    }
+
+    /* Projects and contact container */
+    #projects {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vh;
+        gap: 8vh;
+    }
+
+    .contact-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Popup */
+    .popup-content {
+        width: 95%;
+        max-width: 95vw;
+    }
+
+    /* Buttons */
+    button {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

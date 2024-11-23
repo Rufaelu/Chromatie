@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="back-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <h1>Forgot Password</h1>
+    <h2>Enter Email Address</h2>
+    
+<!--    &lt;!&ndash; Add a form to submit the email &ndash;&gt;-->
+<!--    <form id="forgotPasswordForm">-->
+      <input type="email" name="email" id="email-input" placeholder="example@gmail.com" required />
+      <button id="send-code-btn" type="submit">Send</button>
+<!--    </form>-->
+    
+    <button id="back-to-signin-btn">Back to sign in</button>
+    <p>or</p>
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <button id="signup-btn">Sign Up</button>
+  </div>
+  <script src="../Resources/jquery.js"></script>
+
+  <script src="forgotScript.js"></script> 
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {    
+    background-color: #07076A; /* Updated body color */
+    font-family: 'Outfit', sans-serif;
+    color: #F8ECA6; /* Updated text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F8ECA6; /* Updated header color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #07076A;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ea1010;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.info_section {
+    background-color: #F8ECA6; /* Updated info section color */
+    padding: 20px;
+    width: 45%;
+    margin-left: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub_section {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: -4vh;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #65558F; /* Keep heading color for contrast */
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #6C757D; /* Keep label color for contrast */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    width: 48%;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: #FFFFFF; /* Input background remains white for readability */
+    box-sizing: border-box;
+}
+
+.info_text {
+    font-size: 0.8em;
+    color: #6C757D; /* Keep info text color for contrast */
+    margin-bottom: 20px;
+}
+
+#cancelBtn, #nextBtn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#cancelBtn {
+    background-color: #FFFFFF;
+    color: #65558F;
+    margin-right: 20px;
+}
+
+#nextBtn {
+    background-color: #65558F; /* Keep button color for contrast */
+    color: #FFFFFF;
+}
+
+.submitbtn {
+    background-color: #0fa819;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.DragFile {
+    border: 2px dashed #4caf50;
+    padding: 20px;
+    text-align: center;
+    color: #6C757D; /* Keep drag file text color for contrast */
+    background-color: #F8F9FA; /* Keep drag file background for readability */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.DragFile.highlight {
+    border-color: #333333;
+    background-color: #e6f7ff;
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info_section, .sub_section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

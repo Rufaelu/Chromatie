@@ -1,0 +1,75 @@
+body {
+  background-color: #07076A; /* Updated body color */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #F8ECA6; /* Updated container color */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 500px;
+  max-width: 90%;
+}
+
+h2, h3, h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333; /* Text color for headings */
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333; /* Text color for headings */
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333; /* Text color for headings */
+}
+
+.scroll-container {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.scroll-container p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #444; /* Text color for paragraphs */
+}
+
+button {
+  background-color: #FFD700; /* Button color */
+  color: #FFF;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #FFA000; /* Darker shade on hover */
+}
+
+button:first-child {
+  margin-right: 10px;
+}
+
+button:last-child {
+  margin-left: 10px;
+}
